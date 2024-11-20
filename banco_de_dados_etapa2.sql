@@ -37,7 +37,7 @@ CREATE TABLE IF NOT EXISTS Cargo (
 CREATE TABLE IF NOT EXISTS Funcionario (
     id SERIAL NOT NULL PRIMARY KEY,
     setor_id INT NOT NULL,
-    user_id INT NULL,
+    user_id INT NOT NULL,
     cargo_id INT NOT NULL,
     cpf CHAR(11) NOT NULL UNIQUE,
     nome VARCHAR(250) NOT NULL,
